@@ -80,7 +80,7 @@ public class Client {
         Scanner scanner = new Scanner(System.in);
         System.out.println("entrez votre nom : ");
         String userName = scanner.nextLine();
-        Socket socket = new Socket("localhost", 1234);
+        Socket socket = new Socket("localhost", 7812);
         Client client = new Client(socket, userName);
         client.listenForMessage();
         client.sendMessage();
